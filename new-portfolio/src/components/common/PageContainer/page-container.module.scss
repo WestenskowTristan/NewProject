@@ -1,0 +1,11 @@
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important; 
+  background-color: #0a0b0d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  position: relative;
+}
