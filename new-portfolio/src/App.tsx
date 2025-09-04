@@ -1,12 +1,10 @@
-import React from "react"
-
 import PageContainer from "./components/common/PageContainer"
+import HomePage from "./pages/home"
 
 function App() {
-
   return (
     <PageContainer>
-      hello world
+      <HomePage />
     </PageContainer>
   )
 }

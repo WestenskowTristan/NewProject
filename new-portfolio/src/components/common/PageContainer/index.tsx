@@ -9,7 +9,7 @@ const PageContainer = ({
   children,
 }: PageContainerProps) => {
   return (
-    <div className={`${styles.pageContainer} page-container`}>
+    <div className={`${styles.pageContainer}`}>
       {children}
     </div>
   );
