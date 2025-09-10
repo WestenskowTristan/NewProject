@@ -1,11 +1,28 @@
 .pageContainer {
   width: 100%;
-  height: 100%;
-  padding: 0 !important; 
+  min-height: 100vh; 
+  padding: 0 !important;
   background-color: #0a0b0d;
-  overflow-y: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
   box-sizing: border-box;
+
+  position: relative; 
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.content {
   position: relative;
+  z-index: 1;
 }

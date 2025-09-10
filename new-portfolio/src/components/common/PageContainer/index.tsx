@@ -1,16 +1,19 @@
-import React, { ReactNode } from 'react';
-import styles from './page-container.module.scss';
+import React, { ReactNode } from "react";
+import styles from "./page-container.module.scss";
+import background from "../../../assets/images/space-background2.webp"
 
 type PageContainerProps = {
   children: ReactNode;
 };
 
-const PageContainer = ({
-  children,
-}: PageContainerProps) => {
+const PageContainer = ({ children }: PageContainerProps) => {
   return (
-    <div className={`${styles.pageContainer}`}>
-      {children}
+    <div
+      className={styles.pageContainer}
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className={styles.overlay} />
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

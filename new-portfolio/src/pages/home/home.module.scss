@@ -1,7 +1,10 @@
-.hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.homePageContainer {
+  background-color: #1d262f;
+  height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 2;
+  position: relative;
+  border-left: 2px solid #c4ac8f;
+  border-right: 2px solid #c4ac8f;
 }
