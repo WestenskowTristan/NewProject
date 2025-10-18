@@ -1,8 +1,20 @@
 .homePageContainer {
-  background-color: #1d262f;
-  height: 100vh;
-  // margin-left: 10%;
-  // margin-right: 10%;
   z-index: 2;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.learMoreButton:hover {
+  .buttonText {
+    color: #0a0b0d;
+  }
 }

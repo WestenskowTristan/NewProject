@@ -1,0 +1,51 @@
+.animatedTextContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+.white {
+  color: #e3e0de;
+}
+
+.gold {
+  color: #917f67
+}
+
+.small {
+  font-size: 16px;
+}
+
+.meduim {
+  font-size: 24px;
+}
+
+.large {
+  font-size: 36px;
+}
+
+.extraLarge {
+ font-size: 64px;
+}
+
+.animatedChar{
+  display: inline-block; // Allows individual transformation
+  opacity: 0; // Initial state for fade-in
+  transform: translateY(20px); // Initial state for slide-up
+
+  animation: reveal 0.5s forwards; // Apply animation
+  // Calculate delay based on index (index passed from React component)
+  // This is a simplified example; in a real scenario, you'd dynamically set this
+  // via inline styles or a more advanced SCSS loop if you could pass index.
+  // For a more dynamic approach, inline styles in React are common for delay.
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

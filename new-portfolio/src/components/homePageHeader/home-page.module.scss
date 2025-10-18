@@ -1,0 +1,30 @@
+.HeaderTextContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+}
+
+.headerText {
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.subHeaderName {
+  font-size: 64px;
+  margin-top: 25px;
+}
+
+.animatedText {
+  font-size: 64px;
+  margin-top: 25px;
+}
+
+.subHeaderSubTextContainer {
+  max-width: 685px;
+  margin-top: 25px;
+}
+
+.subHeaderSubText {
+  font-size: 16px;
+  margin-top: 25px;
+}

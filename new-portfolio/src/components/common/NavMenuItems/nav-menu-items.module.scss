@@ -1,11 +1,15 @@
-.navItemContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #dec4a1;
-  padding: 5px;
+.navItemButton:hover {
+  .textStyles {
+    color: #0a0b0d;
+  }
 }
 
-.navItemTitle {
-  font-family: 'Work Sans', sans-serif;
+
+.active {
+  background: #dec4a1 !important;
+  border: 4px solid #dec4a1 !important;
+  cursor: pointer;
+  .textStyles {
+    color: #0a0b0d;
+  }
 }

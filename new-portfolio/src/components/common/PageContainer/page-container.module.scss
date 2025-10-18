@@ -1,8 +1,8 @@
 .pageContainer {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   padding: 0 !important;
-  background-color: #0a0b0d;
+  background: linear-gradient(to bottom right, #0f1419, #202a34);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
   scrollbar-width: none;
   box-sizing: border-box;
 
-  position: relative; 
+  position: relative;
 }
 
 .overlay {
@@ -25,4 +25,5 @@
 .content {
   position: relative;
   z-index: 1;
+  height: 100vh;
 }
