@@ -15,8 +15,8 @@ const HomePageHeader = () => {
         </Text>
         <AnimatedText
           size="extraLarge"
-          text="I build things for the web."
-          delayPerChar={0.05}
+          text="I Speak In Code."
+          delayPerChar={0.08}
           color="gold"
           className={styles.animatedText}
         />

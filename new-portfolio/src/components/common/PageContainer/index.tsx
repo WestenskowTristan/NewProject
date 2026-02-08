@@ -10,7 +10,6 @@ const PageContainer = ({ children }: PageContainerProps) => {
   return (
     <div
       className={styles.pageContainer}
-      // style={{ backgroundImage: `url(${background})` }}
     >
       <div className={styles.overlay} />
       <div className={styles.content}>{children}</div>

@@ -1,6 +1,9 @@
 .animatedTextContainer {
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap; 
+  overflow: visible; 
+  word-break: break-word; 
+  white-space: normal;
 }
 
 .white {
@@ -28,15 +31,11 @@
 }
 
 .animatedChar{
-  display: inline-block; // Allows individual transformation
-  opacity: 0; // Initial state for fade-in
-  transform: translateY(20px); // Initial state for slide-up
+  display: inline-block; 
+  opacity: 0; 
+  transform: translateY(20px); 
 
-  animation: reveal 0.5s forwards; // Apply animation
-  // Calculate delay based on index (index passed from React component)
-  // This is a simplified example; in a real scenario, you'd dynamically set this
-  // via inline styles or a more advanced SCSS loop if you could pass index.
-  // For a more dynamic approach, inline styles in React are common for delay.
+  animation: reveal 0.5s forwards; 
 }
 
 @keyframes reveal {

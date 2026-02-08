@@ -17,13 +17,17 @@ const AnimatedText = ({
   size,
 }: AnimatedTextProps) => {
   return (
-    <div className={styles.animatedTextContainer}>
+    <div
+      className={`${styles.animatedTextContainer} ${
+        className ? className : ""
+      } `}
+    >
       {text.split("").map((char, index) => (
         <span
           key={index}
           className={`${styles.animatedChar} ${color ? styles[color] : ""} ${
             size ? styles[size] : ""
-          } ${className ? className : ""} `}
+          }`}
           style={{ animationDelay: `${index * delayPerChar}s` }}
         >
           {char === " " ? "\u00A0" : char}

@@ -1,10 +1,21 @@
 .navigationConatiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
+  align-items: center; /* vertically center nav content */
+  justify-content: center; /* centers the nav-content container itself */
+  z-index: 1000;
+  background-color: #0f1419;
+}
+
+.navigationContentContainer {
+  width: 90%; /* or max-width: 1200px; for centered layout */
+  display: flex;
+  justify-content: space-between; /* spreads items apart */
   align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  z-index: 10;
-  padding: 25px 15px;
 }
 
 .navItemsContainer {
