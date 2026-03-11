@@ -22,8 +22,7 @@ const HomePageHeader = () => {
         />
         <div className={styles.subHeaderSubTextContainer}>
           <Text className={styles.subHeaderSubText} color="white">
-            I’m a software developer based in Salt Lake City, UT, specializing
-            in frontend web development. I’ve helped build and launch websites
+            I’m a software developer based in Salt Lake City, UT. I’ve helped build and launch websites
             ranging from platforms that connect clients with real estate agents
             to applications for cryptocurrency trading. I’m passionate about
             creating seamless user experiences while leveraging modern coding

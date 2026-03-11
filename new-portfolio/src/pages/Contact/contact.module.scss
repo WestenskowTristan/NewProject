@@ -1,0 +1,54 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  padding: 150px 25px;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  max-width: 500px;
+}
+
+.input,
+.textarea {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.5px;
+  padding: 12px 0;
+  height: auto;
+  color: #eee;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  .buttonText {
+    color: #0a0b0d;
+  }
+}
+
+.success {
+  color: #00ff88;
+}

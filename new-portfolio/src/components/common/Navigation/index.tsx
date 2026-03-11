@@ -3,8 +3,7 @@ import styles from "./navigation.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
 import NavMenuItems from "../NavMenuItems";
 import Button from "../Button";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
-import Icon from "../Icon";
+import logo from '../../../../public/images/logo.webp'
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -14,7 +13,7 @@ const Navigation = () => {
       <div className={styles.navigationContentContainer}>
         <div className={styles.homeButtonContainer}>
           <Button name="home" variant="icon" onClick={() => navigate("/")}>
-            <Icon color="white" icon={faGear} />
+            <img className={styles.logoImage} src={logo} />
           </Button>
         </div>
         <div className={styles.navItemsContainer}>

@@ -2,7 +2,60 @@
   padding: 100px 25px;
 }
 
-
 .headerContainer {
   margin-top: 100px;
+  margin-left: 10%;
+}
+
+.workContentContainer {
+  margin-top: 50px;
+}
+
+.workSeperator {
+  height: 5px;
+
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.resumeText {
+  font-size: 24px;
+}
+
+.resumeButton:hover {
+  .buttonText {
+    color: #0a0b0d;
+  }
+}
+
+.seperatorDiv {
+  width: 100%;
+  border: 2px solid #dec4a1;
+  margin-top: 35px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+.learnMoreButton:hover {
+  .buttonText {
+    color: #0a0b0d;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .animatedText {
+    justify-content: center;
+  }
 }
